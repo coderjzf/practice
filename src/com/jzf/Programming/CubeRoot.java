@@ -2,6 +2,7 @@ package com.jzf.Programming;
 
 import java.util.Scanner;
 
+/*求立方根*/
 public class CubeRoot {
 	public static double cubeRoot(double input) {
 		double min = 0;
