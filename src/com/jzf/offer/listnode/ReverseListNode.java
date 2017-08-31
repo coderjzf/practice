@@ -1,4 +1,4 @@
-package com.jzf.offer;
+package com.jzf.offer.listnode;
 
 class ListNode {
 	int val;
