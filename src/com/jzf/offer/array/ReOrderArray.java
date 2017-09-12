@@ -37,7 +37,8 @@ public class ReOrderArray {
 			array[i] = odd.get(i);
 		}
 	}
-
+	
+	/*不能保持相对位置的解法*/
 	public static void reOrderArray3(int[] array) {
 		int front = 0;
 		int behind = array.length - 1;

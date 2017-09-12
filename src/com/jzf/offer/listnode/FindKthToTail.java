@@ -24,7 +24,7 @@ public class FindKthToTail {
 			}
 			node = node.next;
 		}
-		// node与node2同时遍历，当node遍历到尾结点时，node2移动到倒数第k个结点处
+		// node与node2同时遍历，当node遍历到尾结点时，node2移动到顺数第n-(k-1)个结点处，即倒数第k个结点处
 		while (node.next != null) {
 			node = node.next;
 			node2 = node2.next;

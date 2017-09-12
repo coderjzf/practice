@@ -28,4 +28,20 @@ public class ReverseListNode {
 		return pre;
 	}
 
+	public ListNode reverseList(ListNode head) {
+		ListNode pre = null;
+		ListNode next = null;
+		ListNode reverseHead = null;
+		ListNode node = head;
+		while (node != null) {
+			next = node.next;
+			if (next == null)
+				reverseHead = node;
+			node.next = pre;
+			pre = node;
+			node = next;
+		}
+		return reverseHead;
+	}
+
 }
