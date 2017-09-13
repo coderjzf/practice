@@ -135,7 +135,7 @@ public class BinaryTree {
 	} */
 	
 	/*·ÇµÝ¹é±éÀú*/
-	
+
 	public void preOrder2(TreeNode treeNode) {
 		if (treeNode == null)
 			return;

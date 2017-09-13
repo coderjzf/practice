@@ -4,6 +4,7 @@ package com.jzf.offer.tree;
 public class SubTree {
 	public boolean HasSubtree(TreeNode root1, TreeNode root2) {
 		boolean flag = false;
+		/*两棵树不全为空*/
 		if (root1 != null && root2 != null) {
 			if (root1.val == root2.val)
 				flag = doesTree1HasTree2(root1, root2);
