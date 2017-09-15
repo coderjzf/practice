@@ -9,7 +9,7 @@ import java.util.LinkedList;
 从上到下按层打印二叉树，同一层结点从左至右输出。每一层输出一行。*/
 public class LevelTraversal {
 	
-	/*从上到下按层打印二叉树*/
+	/*从上到下 按层 打印二叉树*/
 	public ArrayList<ArrayList<Integer>> print(TreeNode pRoot) {
 		Deque<TreeNode> deque = new ArrayDeque<>();
 		ArrayList<ArrayList<Integer>> result = new ArrayList<>();

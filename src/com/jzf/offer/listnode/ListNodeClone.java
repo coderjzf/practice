@@ -1,4 +1,4 @@
-package com.jzf.offer.tree;
+package com.jzf.offer.listnode;
 
 public class ListNodeClone {
 	public RandomListNode Clone(RandomListNode pHead) {

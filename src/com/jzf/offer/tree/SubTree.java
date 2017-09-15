@@ -4,10 +4,12 @@ package com.jzf.offer.tree;
 public class SubTree {
 	public boolean HasSubtree(TreeNode root1, TreeNode root2) {
 		boolean flag = false;
-		/*两棵树不全为空*/
+		/*两棵树都不为空*/
 		if (root1 != null && root2 != null) {
+			/*如果根节点的值相等，说明以root1和root2分别为根的两棵树可能相等*/
 			if (root1.val == root2.val)
 				flag = doesTree1HasTree2(root1, root2);
+			/*否则，继续向下遍历，寻找根节点的值相等的根节点*/
 			if (!flag)
 				flag = HasSubtree(root1.left, root2);
 			if (!flag)
