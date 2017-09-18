@@ -10,7 +10,6 @@ public class FindNumsAppearOnce {
 	public static void findNumsAppearOnce(int[] array, int num1[], int num2[]) {
 		if (array == null || array.length == 0)
 			return;
-		// int[] repeat = new int[10];
 		HashMap<Integer, Integer> map = new HashMap<>();
 		for (int i = 0; i < array.length; i++) {
 			if (!map.containsKey(array[i])) {
@@ -36,16 +35,16 @@ public class FindNumsAppearOnce {
 	public static void findNumsAppearOnce2(int[] array, int[] num1, int[] num2) {
 		int result = 0;
 		// 求出依次异或的结果
-		// 由于相同的两个数异或的结果为0 所以此结果是两个不重复的数异或的结果
+		// 由于相同的两个数异或的结果为0 所以此结果是两个只出现依次的数异或的结果
 		for (int i : array) {
 			result ^= i;
 		}
 
-		// 找到异或的结果中从右往左第一个1的位置n
+		// 找到异或的结果中从右往左第一个1的位置
 		int indexOfBitIs1 = findIndexOfBitIs1(result);
 
 		// 根据从右往左n位为1或0，将数组分为两类
-		// 一类中有一个只出现一次的数和若干对出现两次的数
+		// 每一类中有一个只出现一次的数和若干对出现两次的数
 		for (int i : array) {
 			if (isBit1(i, indexOfBitIs1)) {
 				num1[0] ^= i;

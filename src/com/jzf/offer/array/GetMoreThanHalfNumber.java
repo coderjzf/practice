@@ -16,7 +16,7 @@ public class GetMoreThanHalfNumber {
 		 * 出现次数超过数组长度一半的数，则"排序"后数组中位数就是满足条件的那个数
 		 * 利用partition函数，选取基准值pivotkey，使得基准值左边的数都小于等于它，基准值右边的数都大于等于它
 		 * 如果得到的基准值的索引小于middle,则中位数位于基准值右边，继续在右边查找
-		 * 如果得到的基准值的所有大于middle,则中位数位于基准值左边，继续在左边查找
+		 * 如果得到的基准值的索引大于middle,则中位数位于基准值左边，继续在左边查找
 		 */
 		while (index != middle) {
 			if (index < middle) {

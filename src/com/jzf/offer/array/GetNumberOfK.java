@@ -14,7 +14,7 @@ public class GetNumberOfK {
 		return count;
 	}
 
-	// 找到第一次出现的位置
+	// 找到k第一次出现的位置
 	public static int getFirstK(int[] array, int k, int start, int end) {
 		if (start > end)
 			return -1;
@@ -34,7 +34,7 @@ public class GetNumberOfK {
 		return getFirstK(array, k, start, end);
 	}
 
-	// 找到最后一次出现的位置
+	// 找到k最后一次出现的位置
 	public static int getLastK(int[] array, int k, int start, int end) {
 		if (start > end)
 			return -1;

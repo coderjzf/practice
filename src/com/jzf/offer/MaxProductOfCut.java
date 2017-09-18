@@ -4,6 +4,7 @@ package com.jzf.offer;
  *请问k[0],k[1]...k[m]的最大可能乘积是多少 
  */
 public class MaxProductOfCut {
+	/*动态规划 自下而上*/
 	public static int maxProductOfCut(int length) {
 		int[] product = new int[length + 1];
 		product[0] = 0;
