@@ -1,22 +1,22 @@
 package com.jzf.Programming;
 
+class Person {
+    String name = "No name";
+    public Person(String nm) {
+        name = nm;
+    }
+}
+class Employee extends Person {
+    String empID = "0000";
+    public Employee(String id) {
+    	super(id);
+        empID = id;
+    }
+}
 public class Test {
-	private float f = (float)1.0;
-	int m = 12;	
-	static int n = 1;
+    public static void main(String args[]) {
+        Employee e = new Employee("123");
+        System.out.println(e.empID);
 
-	public static void main(String args[]) {
-		Test t = new Test();
-		System.out.println(Test.n);
-	//	char c = "c";
-		//System.out.println(c);
-	}
-}
-abstract class AAA{
-	AAA(){
-		
-	}
-}
-interface BBB{
-
+    }
 }

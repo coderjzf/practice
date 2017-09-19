@@ -16,6 +16,7 @@ public class Demo {
 		for (Collection<?> collection : collections) {
 			System.out.println(subToSuper.getType(collection));
 		}
+		System.out.println(Math.round(-11.5));
 	}
 
 	abstract static class Super {
